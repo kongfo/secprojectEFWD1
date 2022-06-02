@@ -1,0 +1,6 @@
+com\automation\step_definitions\login.class
+com\automation\runners\TestRunner.class
+com\automation\step_definitions\Hooks.class
+com\automation\step_definitions\register.class
+com\automation\step_definitions\shopping.class
+com\automation\step_definitions\Search.class
