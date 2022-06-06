@@ -5,24 +5,14 @@ import io.cucumber.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
 import java.util.concurrent.TimeUnit;
 
 public class Hooks {
-      static WebDriver driver;
-//    static protected Select select;
-//    static Actions actions;
-//
-//    public Hooks(WebDriver driver) {
-//        this.driver = driver;
-////        org.openqa.selenium.support.Hooks.initElements(driver, this);
-
-    }
+    static   WebDriver driver;
 
     @Before
-    public  void user_open_chrome_browser()
+    public static void user_open_chrome_browser()
     {
 
         WebDriverManager.chromedriver().setup();
@@ -33,7 +23,7 @@ public class Hooks {
     }
 
     @After
-    public  void quitdriver() throws InterruptedException {
+    public static void quitdriver() throws InterruptedException {
 
         driver.quit();
     }
