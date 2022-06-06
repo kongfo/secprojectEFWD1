@@ -1,5 +1,6 @@
-package com.automation.step_definitions;
+package com.automation.pages;
 
+import com.automation.step_definitions.Hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
