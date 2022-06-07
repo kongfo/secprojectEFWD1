@@ -3,7 +3,7 @@ Feature: F12_user could Create successful Order
 
   Scenario: SC12- Create successful Order
     Given user go to login page
-    When user login with "valid" "test4@teml.net" and "P@ssw0rd1"
+    When user login with "valid" "test1@teml.net" and "P@ssw0rd1"
     And user press on login button
     And user go to product page
     And user add product to shopping cart
