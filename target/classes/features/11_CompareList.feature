@@ -1,5 +1,5 @@
 @testo
-Feature: Logged user could add different products to compare list
+Feature: F11_Logged user could add different products to compare list
 
 
   Scenario: SC11- Logged user could add different products to compare list

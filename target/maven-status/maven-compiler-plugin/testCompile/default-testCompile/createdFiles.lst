@@ -1,6 +1,14 @@
+com\automation\pages\LoginPage.class
+com\automation\pages\ApparelPage.class
+com\automation\pages\PageFactoryPage.class
+com\automation\step_definitions\register.class
+com\automation\pages\RecoverPasswordPage.class
+com\automation\step_definitions\Hooks.class
+com\automation\step_definitions\Search.class
+com\automation\pages\OrderPage.class
+com\automation\pages\HomePage.class
 com\automation\step_definitions\login.class
 com\automation\runners\TestRunner.class
-com\automation\step_definitions\Hooks.class
-com\automation\step_definitions\register.class
+com\automation\pages\RegistrationPage.class
 com\automation\step_definitions\shopping.class
-com\automation\step_definitions\Search.class
+com\automation\pages\SearchPage.class

@@ -1,5 +1,5 @@
 @testo
-Feature: Logged user could add different products to Wishlist
+Feature: F10_Logged user could add different products to Wishlist
 
 
   Scenario: SC10- Logged user could add different products to Wishlist
