@@ -86,6 +86,7 @@ public class FollowUs {
 
     @Given("user click rss")
     public void user_click_rss() throws InterruptedException {
+        Thread.sleep(1000);
         Hooks.driver.findElement(By.cssSelector("a[href=\"/news/rss/1\"]")).click();
         Thread.sleep(1000);
 
