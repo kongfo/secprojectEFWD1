@@ -2,6 +2,7 @@ package com.automation.step_definitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -65,7 +66,22 @@ public class  Slider {
 
         }
 
+    @When("user click slider photo")
+    public void user_click_slider_photo() throws InterruptedException {
+
+        Hooks.driver.findElement(By.cssSelector("a[href=\"http://demo.nopcommerce.com/\"]")).click();
+        Thread.sleep(1000);
 
 
+    }
+    @Then("verify that slider navigate to its website")
+    public void verify_slider_navigate_to_website() {
+
+        String expictedResult = Hooks.driver.getCurrentUrl();
+        String actualResult =  "https://demo.nopcommerce.com/";
+
+        Assert.assertTrue(actualResult.contains(expictedResult));
+
+    }
 
 }

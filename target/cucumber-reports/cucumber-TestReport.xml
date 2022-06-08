@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="17" time="149.591">
-<testcase classname="F01_User could register with valid data" name="SC1- User could register with valid data" time="7.956">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="155.162">
+<testcase classname="F01_User could register with valid data" name="SC1- User could register with valid data" time="8.075">
 <system-out><![CDATA[Given user go to register page..............................................passed
-When user register with "valid" "test" and "test" and "test4@teml.net" and "test1" and "P@ssw0rd1" and "P@ssw0rd1".passed
+When user register with "valid" "test" and "test" and "test2@teml.net" and "test1" and "P@ssw0rd1" and "P@ssw0rd1".passed
 And user press on register button...........................................passed
 Then user registrated to the system successfully............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F02_User could log in with valid email and password" name="SC2- User could log in with valid email and password" time="6.354">
+<testcase classname="F02_User could log in with valid email and password" name="SC2- User could log in with valid email and password" time="6.543">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "valid" "test1@teml.net" and "P@ssw0rd1"...............passed
 And user press on login button..............................................passed
 Then user login to the system successfully and go to home page..............passed
 ]]></system-out>
 </testcase>
-<testcase classname="F03_User could reset his/her password" name="SC3- User could reset his/her password successfully" time="7.511">
+<testcase classname="F03_User could reset his/her password" name="SC3- User could reset his/her password successfully" time="7.571">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user press on Forget password..........................................passed
 And user Write email........................................................passed
@@ -22,7 +22,7 @@ And user press on on Recover button.........................................pass
 Then User could reset his_her password successfully.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F04_Logged User could search for any product" name="SC4- Logged User could search for any product" time="7.187">
+<testcase classname="F04_Logged User could search for any product" name="SC4- Logged User could search for any product" time="7.417">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "valid" "test1@teml.net" and "P@ssw0rd1"...............passed
 And user press on login button..............................................passed
@@ -31,7 +31,7 @@ And user search with name of product........................................pass
 Then user could find relative results.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F05_Logged User could switch between currencies US-Euro" name="SC5- Logged User could switch between currencies US-Euro" time="8.286">
+<testcase classname="F05_Logged User could switch between currencies US-Euro" name="SC5- Logged User could switch between currencies US-Euro" time="8.598">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "valid" "test1@teml.net" and "P@ssw0rd1"...............passed
 And user press on login button..............................................passed
@@ -39,7 +39,7 @@ And user clicks on Currency Selector........................................pass
 Then user select Euro.......................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F06_Logged user could select different Categories" name="SC6- Logged user could select different Categories" time="9.178">
+<testcase classname="F06_Logged user could select different Categories" name="SC6- Logged user could select different Categories" time="9.311">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "valid" "test1@teml.net" and "P@ssw0rd1"...............passed
 And user press on login button..............................................passed
@@ -47,7 +47,7 @@ And user select Apparel category............................................pass
 Then user select Shoes sub_Category.........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F07_Logged user could filter with color" name="SC7- Logged user could filter with color" time="10.254">
+<testcase classname="F07_Logged user could filter with color" name="SC7- Logged user could filter with color" time="10.441">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "valid" "test1@teml.net" and "P@ssw0rd1"...............passed
 And user press on login button..............................................passed
@@ -56,7 +56,7 @@ And user select Shoes sub_Category..........................................pass
 Then user could filter with color Red.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F08_Logged user could select different tags" name="SC8- Logged user could select different tags" time="11.074">
+<testcase classname="F08_Logged user could select different tags" name="SC8- Logged user could select different tags" time="11.22">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "valid" "test1@teml.net" and "P@ssw0rd1"...............passed
 And user press on login button..............................................passed
@@ -65,7 +65,7 @@ And user select Shoes sub_Category..........................................pass
 Then user select awesome tag................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F09_Logged user could add different products to Shopping cart" name="SC9- Logged user could add different products to Shopping cart" time="11.679">
+<testcase classname="F09_Logged user could add different products to Shopping cart" name="SC9- Logged user could add different products to Shopping cart" time="11.41">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "valid" "test1@teml.net" and "P@ssw0rd1"...............passed
 And user press on login button..............................................passed
@@ -74,7 +74,7 @@ And user add product to shopping cart.......................................pass
 Then The product has been added to your cart................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F10_Logged user could add different products to Wishlist" name="SC10- Logged user could add different products to Wishlist" time="11.445">
+<testcase classname="F10_Logged user could add different products to Wishlist" name="SC10- Logged user could add different products to Wishlist" time="11.559">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "valid" "test1@teml.net" and "P@ssw0rd1"...............passed
 And user press on login button..............................................passed
@@ -83,7 +83,7 @@ And user add product to Wishlist............................................pass
 Then The product has been added to your Wishlist............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F11_Logged user could add different products to compare list" name="SC11- Logged user could add different products to compare list" time="11.178">
+<testcase classname="F11_Logged user could add different products to compare list" name="SC11- Logged user could add different products to compare list" time="11.536">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "valid" "test1@teml.net" and "P@ssw0rd1"...............passed
 And user press on login button..............................................passed
@@ -92,9 +92,9 @@ And user add product to compare list........................................pass
 Then The product has been added to your compare list........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F12_user could Create successful Order" name="SC12- Create successful Order" time="22.826">
+<testcase classname="F12_user could Create successful Order" name="SC12- Create successful Order" time="22.349">
 <system-out><![CDATA[Given user go to login page.................................................passed
-When user login with "valid" "test4@teml.net" and "P@ssw0rd1"...............passed
+When user login with "valid" "test2@teml.net" and "P@ssw0rd1"...............passed
 And user press on login button..............................................passed
 And user go to product page.................................................passed
 And user add product to shopping cart.......................................passed
@@ -106,27 +106,32 @@ And user click continue button..............................................pass
 Then user Create successful Order...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F13_user could interact with slider" name="SC13-user could interact with slider" time="5.744">
+<testcase classname="F13_user could interact with slider" name="SC13-user could interact with slider" time="5.908">
 <system-out><![CDATA[When user change slider photo...............................................passed
 Then verify that slider photo changed.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F14_user can opens facebook/twitter/rss/Youtube pages" name="SC14- user can opens facebook page" time="4.352">
+<testcase classname="F13_user could interact with slider" name="SC14-user could interact with slider photo" time="4.307">
+<system-out><![CDATA[When user click slider photo................................................passed
+Then verify that slider navigate to its website.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F14_user can opens facebook/twitter/rss/Youtube pages" name="SC15- user can opens facebook page" time="4.031">
 <system-out><![CDATA[When user click facebook....................................................passed
 Then verify that it opens facebook page.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F14_user can opens facebook/twitter/rss/Youtube pages" name="SC15- user can opens twitter page" time="3.856">
+<testcase classname="F14_user can opens facebook/twitter/rss/Youtube pages" name="SC16- user can opens twitter page" time="4.151">
 <system-out><![CDATA[When user click twitter.....................................................passed
 Then verify that it opens twitter page......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F14_user can opens facebook/twitter/rss/Youtube pages" name="SC16- user can opens rss page" time="5.021">
+<testcase classname="F14_user can opens facebook/twitter/rss/Youtube pages" name="SC17- user can opens rss page" time="5.146">
 <system-out><![CDATA[When user click rss.........................................................passed
 Then verify that it opens rss page..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F14_user can opens facebook/twitter/rss/Youtube pages" name="SC17- user can opens Youtube page" time="5.423">
+<testcase classname="F14_user can opens facebook/twitter/rss/Youtube pages" name="SC18- user can opens Youtube page" time="5.31">
 <system-out><![CDATA[When user click youtube.....................................................passed
 Then verify that it opens youtube page......................................passed
 ]]></system-out>

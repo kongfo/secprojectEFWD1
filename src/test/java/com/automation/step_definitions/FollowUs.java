@@ -27,9 +27,10 @@ public class FollowUs {
     @Then("verify that it opens facebook page")
     public void opensfacebook_page()
     {
+        Hooks.driver.close();
         List<String> browserTabs = new ArrayList<String>(Hooks.driver.getWindowHandles());
 
-        Hooks.driver.switchTo().window(browserTabs .get(1));
+        Hooks.driver.switchTo().window(browserTabs .get(0));
 
         String expictedResult = Hooks.driver.getCurrentUrl();
         String actualResult =  "https://www.facebook.com/nopCommerce/";
@@ -50,9 +51,11 @@ public class FollowUs {
     @Then("verify that it opens twitter page")
     public void openstwitter_page()
     {
+        Hooks.driver.close();
+
         List<String> browserTabs = new ArrayList<String>(Hooks.driver.getWindowHandles());
 
-        Hooks.driver.switchTo().window(browserTabs .get(1));
+        Hooks.driver.switchTo().window(browserTabs .get(0));
 
         String expictedResult = Hooks.driver.getCurrentUrl();
         String actualResult =  "https://twitter.com/nopCommerce";
@@ -73,9 +76,12 @@ public class FollowUs {
     @Then("verify that it opens youtube page")
     public void opensrss_youtube()
     {
+
+        Hooks.driver.close();
+
         List<String> browserTabs = new ArrayList<String>(Hooks.driver.getWindowHandles());
 
-        Hooks.driver.switchTo().window(browserTabs .get(1));
+        Hooks.driver.switchTo().window(browserTabs .get(0));
 
         String expictedResult = Hooks.driver.getCurrentUrl();
         String actualResult =  "https://www.youtube.com/user/nopCommerce";
