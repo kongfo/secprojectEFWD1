@@ -1,5 +1,5 @@
 @testo
-Feature: F03_user could add different products to Shopping cart, Wishlist , compare list and create order
+Feature: F09_Logged user could add different products to Shopping cart
 
   Scenario: SC9- Logged user could add different products to Shopping cart
     Given user go to login page
