@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
@@ -111,6 +112,29 @@ public class FollowUs {
         String actualResult =  "https://demo.nopcommerce.com/news/rss/1";
 
         Assert.assertTrue(actualResult.contains(expictedResult));
+
+    }
+
+    String x= Hooks.driver.findElement(By.cssSelector("a[rel=\"0\"]")).getAttribute("class");
+
+    @Given("Open Feed Validation Service3 verify that Feed is Valid")
+    public void Feed_is_Valid() throws InterruptedException {
+
+        String x= Hooks.driver.getCurrentUrl();
+        Hooks.driver.navigate().to("https://validator.w3.org/feed/");
+        Hooks.driver.findElement(By.id("url")).sendKeys(x);
+
+        Hooks.driver.findElement(By.cssSelector("a[class=\"submit\"]")).click();
+
+
+        Thread.sleep(2000);
+
+        String expictedResult = "Congratulations!";
+     String actualResult =  Hooks.driver.findElement(By.xpath("//h2")).getText();
+System.out.print(Hooks.driver.findElement(By.xpath("//h2")).getText()
+);
+        Assert.assertTrue(actualResult.contains(expictedResult));
+
 
     }
 
