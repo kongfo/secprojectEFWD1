@@ -108,8 +108,9 @@ public class FollowUs {
 //
 //        Hooks.driver.switchTo().window(browserTabs .get(1));
 
-        String expictedResult = Hooks.driver.getCurrentUrl();
-        String actualResult =  "https://demo.nopcommerce.com/news/rss/1";
+        String actualResult = Hooks.driver.getCurrentUrl();
+        String  expictedResult =  "news/rss";
+
 
         Assert.assertTrue(actualResult.contains(expictedResult));
 
